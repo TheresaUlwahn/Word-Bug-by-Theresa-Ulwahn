@@ -1,0 +1,97 @@
+/* Example styling of a h1 element */
+
+/*Use of flexbox ensures that elements behave predictably when the page layout
+must accommodate different screen sizes and different display devices*/
+
+.flex-container {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    text-align: center;
+}
+
+.flex-container > * {
+    padding: 15px;
+    -webkit-flex: 1 100%;
+    flex: 1 100%;
+}
+
+.article {
+    text-align: left;
+}
+
+.article {
+    -webkit-flex:5 0px;
+    flex:5 0px;
+    -webkit-order:2;
+    order:2;
+    font-family: Trebuchet, helvetica, arial;
+}
+
+/*backdrop of the whole page*/
+body {
+  background: #FFFFFF;
+  font-family: Trebuchet, helvetica, arial;
+  color: #999999;
+  padding-bottom: 400px; /*padding gives space between last fig caption and footer*/
+}
+
+/*first headline*/
+h1 {
+	font-size: 30px;
+	font-family: Trebuchet, helvetica, arial;
+	font-weight: 500;
+	border-bottom: 1px solid #999999;  /*thin underline from side to side*/
+	color: #999999;
+	text-align:center;
+	font-variant: small-caps; /*text with capitals and first letter big*/
+}
+
+/*headlines index page*/
+h2 {
+    font-size: 25px;
+    font-family: Trebuchet, helvetica, arial;
+    font-weight: 500;
+    color: #999999;
+    text-align:center;
+    font-variant: small-caps; /*text with capitals and first letter big*/
+}
+
+/*text*/
+p {
+	color: #999999;
+	line-height: 1.5;
+	font-family: Trebuchet, helvetica, arial;
+	font-size: 15px;
+}
+
+/*picture*/
+figure {
+		float: left;
+		margin-left: auto;
+	 }
+        img {
+            height: auto; /*picture height*/
+            float: left;
+            padding: 0;
+        }
+
+        /* text under picture*/
+        figcaption {
+            color: #999999;
+            font-family: Trebuchet, helvetica, arial;
+            text-align: center;
+          }
+
+/*footer to place it at the bottom of the page*/
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: white;
+  color: #999999;
+  font-family: Trebuchet, helvetica, arial;
+  text-align: center;
+}
